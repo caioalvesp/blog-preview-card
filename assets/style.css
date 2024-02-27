@@ -1,0 +1,78 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Figtree', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--white);
+  width: 325px;
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-tag {
+  background-color: var(--yellow);
+  font-weight: 800;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.post-timestamp {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.post-description {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-photo {
+  width: 32px;
+}
+
+.author-name {
+  font-weight: 800;
+  font-size: 14px;
+}
